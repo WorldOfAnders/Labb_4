@@ -104,6 +104,32 @@ li { font-size: var(--font-size-P); }
 small {
   font-size: var(--font-size-S); }
 
+  .Publish_note {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    margin: 0px 0px 1px 0px;
+    }
+
+  .text1 {
+    margin: 21px 21px 21px 28px;
+    }
+
+  .article1 {
+    position: absolute;
+    color: white;
+    width: fit-content;
+    }
+
+  .article2 {
+    color: white;
+    width: fit-content;
+    }
+
+  /* Button textcolor styling */
+  span {
+    color: white;
+  }
+
 
   /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 4.0 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
   .layout-container {
@@ -208,6 +234,119 @@ small {
 
   .search-query { border: 0px; background-color: transparent; }
   .searchIcon { width: 12.49px; height: 12.49px; }
+
+/*▓▓ 5.2 MAIN ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+@media (max-width: 376px) {
+
+h1 { font-size: 14px; line-height: auto;}
+p,
+ul,
+li, {font-size: 11px; line-height: 15px;}
+
+
+/*══ Styling flexbox ═════════════════════════════════════════════════════════*/
+    .flex-container {
+      display: flex; flex-direction: column; flex-wrap: wrap; flex: 1;
+      margin-top: 17px; margin-left: auto;
+      margin-right: auto; max-width: 376px;
+      }
+
+    .column1 {
+      display: block;
+      width: 61%; height: 190px;
+      max-height: 190px;
+      margin-right: 17px;
+      margin-bottom: 6px;
+      }
+
+/*══ Styling article1 1 ══════════════════════════════════════════════════════*/
+    .container {
+      position: absolute; left: 0; right: 0;
+      bottom: 4px; top: 100px; background: rgba(0, 0, 0, 0.7); }
+    .img1 { width: 346px; height: 190px; overflow: hidden; }
+    .text1 { margin: 20px 0px 0px 27px; width: 67%;}
+    .bodytext { display: none;}
+
+/*══ Styling Read more button 1 ══════════════════════════════════════════════*/
+      .readmore { position: absolute; right: 15px; bottom: 5px; }
+      .readmore button {
+        border: none; font-size: 9px; cursor: pointer;
+        background-image: url(./img/Arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: transparent;
+        text-align: left; width: 60px; height: 16px;
+        background-position: 0px 10px;}
+      .readmore span { margin-left: -5px; } /*Text*/
+
+
+/*══ Styling Column 2 ════════════════════════════════════════════════════════*/
+    .column2 {
+      display: block; flex-direction: column;
+      flex-basis: 100%; flex: 1;
+      width: 346px; height: 150px; }
+
+/*══ Styling article1 2 ══════════════════════════════════════════════════════*/
+  .column2-1 { width: 100%; height: 150px; }
+    .article2 { width: 100%; height: 150px; }
+    .img2 { width: 100%; height: 150px; }
+    .container2 { position: relative;
+              left: 0; right: 0; bottom: 0px; top: -72px;
+              background: rgba(0, 0, 0, 0.7); }
+    .text2 { padding: 4px 10px 15px 16px; }
+    h1 { margin: 0px 0px 5px 0px;}
+    .bodytext2 { display: none; }
+
+/*Publish_note_2*/
+    .Publish_note_2 { margin-bottom: -1px; font-size: 10px; line-height: 14px; }
+
+
+/*══ Styling Read more button 2 ══════════════════════════════════════════════*/
+      .readmore2 { position: absolute; right: 8px; bottom: 0px; }
+      .readmore2 button {
+        border: none; font-size: 9px; cursor: pointer;
+        background-image: url(./img/Arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: transparent;
+        text-align: left; width: 60px; height: 16px;
+        background-position: 0px 10px; }
+      .readmore2 span { margin-left: -5px;}
+
+
+    .column2-2 { height: 274px; margin-top: 4px; }
+
+  /*══ Styling article1 3 ══════════════════════════════════════════════════════*/
+    .column2-2-1 { height: 126px; width: 100%; margin-bottom: 6px; }
+
+    .article3 { width: 100%; height: 100%; display: flex; }
+
+    .img3 { width: 44%; height: 100%; }
+
+    .section3 { margin-left: 5px; }
+              width: 100%; height: 100%;
+              line-height: 15px; display: flex;
+
+  /*══ Styling article1 4 ══════════════════════════════════════════════════════*/
+
+    .column2-2-2 { height: 139px; width: 100%; }
+    .article4 { width: 100%; height: 139px; display: flex;}
+    .img4 { width: 44%; height: 139px; }
+    .section4 { margin-left: 5px; }
+
+  /*══ Styling FOOTER ══════════════════════════════════════════════*/
+    footer { width: 100%; }
+    hr {
+      position: relative;
+      width: 100%; height: 1px;
+      background-color: #1E2D37;
+    }
+
+    .img5 { width: 100%; height: auto; }
+
+  } /*<end of Mobile version>*/
+
+
 
   /*░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
    DESKTOP VERSION ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
