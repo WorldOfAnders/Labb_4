@@ -1,0 +1,281 @@
+/*░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+                                      ◢◣ ▁ ◢◣
+                              ●●●  ◖(  ^ ܫ ^ )◗  ●●●
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ SASS CSS ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+by Anders Boer Design 2021░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░*/
+
+/*░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ TABLE OF CONTENT ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+MOBILE VERSION
+  1.0 VARIABLES
+    1.1 COLORS
+    1.2 TYPOGRAPHY
+    1.3 LAYOUT
+  2.0 FOUNDATION
+  3.0 TYPOGRAPHY
+  4.0 LAYOUT
+  5.0 SECTION
+    5.1 HEADER
+    5.2 MAIN
+DESKTOP VERSION
+*/
+
+/*░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+ MOBILE VERSION ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 1.0 VARIABLES ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+:root {
+
+/*▓▓ 1.1 COLORS ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+/*══ Background colors ═══════════════════════════════════════════════════════*/
+--color-background-primary: #FFFFFF;
+--color-background-overlay: #000000;
+
+/*══ Text colors ═════════════════════════════════════════════════════════════*/
+--color-typography-primary: #1E2D37;
+--color-typography-overlay: #FFFFFF;
+
+/*▓▓ 1.2 TYPOGRAPHY ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+/*══ Font family ══*/
+--font-family_Paragraph: "Open Sans", "Segoe UI", "Tahoma", "sans-serif";
+--font-family_Heading: "TimesNewRoman","Times New Roman","Times","Baskerville","Georgia,serif";
+
+/*══ Font weight ══*/
+--font-weight-H1: 700;
+--font-weight-P: 400;
+
+/*══ Font size ══*/
+--font-size-H1: 16px;
+--font-size-P: 13px;
+--font-size-S: 10px;
+
+/*══ Font leading ══*/
+--typography-leading-P: 15px;
+
+/*▓▓ 1.3 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+  --layout-container: 1.25rem;
+  --layout-grid     : 3.625rem;
+  --layout-gutter   : 1rem;
+
+}
+
+/*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 2.0 FOUNDATION ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+html { box-sizing: border-box; }
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+body {
+  background-color: var(--color-background-primary);
+  color: var(--color-typography-primary);
+  font-family: var(--font-family_Paragraph);
+  font-feature-settings: "liga", "kern";
+  font-size: var(--font-size-P);
+  font-weight: 400;
+  line-height: var(--typography-p-leading);
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 3.0 TYPOGRAPHY ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+h1 {
+  font-family: var(--font-family_Heading);
+  color: var(--font-size-H1);
+  font-size: var(--font-size-H1);
+}
+
+strong { font-weight: 700; }
+
+p,
+ul,
+li { font-size: var(--font-size-P); }
+
+small {
+  font-size: var(--font-size-S); }
+
+
+  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 4.0 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  .layout-container {
+    padding-left: var(--layout-container);
+    padding-right: var(--layout-container);
+  }
+
+  .layout-flex {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .layout-flex {
+    display: flex;
+  }
+  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 5.0 SECTION ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+  /*▓▓ 5.1 HEADER ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+  .section-header {
+    padding-top: 28px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, .2);
+    height: 57x;
+  }
+
+  .section-header__layout { justify-content: space-between; }
+
+  /*══ LOGO ══*/
+  .section-header--logo { z-index: 2; }
+  .imgLogo { height: 36px; width: auto; }
+
+  /*══ HAMBURGER ══*/
+  #section-header--menu-id { display: none; }
+
+  .section-header--menu-icon {
+    cursor: pointer;
+    display: block;
+    height: 1.125rem; width: 1.125rem;
+    padding-bottom: .25rem; padding-top: .25rem;
+    position: relative; z-index: 2;
+  }
+
+  .section-header--menu-icon::before,
+  .section-header--menu-icon::after {
+    background: var(--color-typography-primary);
+    content: "";
+    height: .125rem; width: 1.125rem;
+    left: 0;
+    position: absolute;
+    transition: all 250ms cubic-bezier(.785, .135, .15, .86);
+
+  }
+
+  .section-header--menu-icon::before { top: .3125rem; }
+  .section-header--menu-icon::after { top: .6875rem; }
+
+  #section-header--menu-id:checked ~
+  .section-header--menu-icon::before {
+    transform: translateY(3px) rotate(135deg);
+  }
+
+  #section-header--menu-id:checked ~
+  .section-header--menu-icon::after {
+    transform: translateY(-3px) rotate(45deg);
+  }
+
+/*══ MENU ════════════════════════════════════════════════════════════════════*/
+  .section-header--nav {
+    background-color: var(--color-background-primary);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
+    flex-direction: column;
+    gap: var(--gap-header);
+    top: -1rem; left: 0; right: 0;
+    opacity: 0;
+    padding: 7.375rem var(--layout-container) 5rem;
+    position: absolute;
+    transition: all 250ms cubic-bezier(.785, .135, .15, .86);
+    visibility: hidden;
+  }
+
+  #section-header--menu-id:checked ~
+  .section-header--nav {
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .section-header--nav-link {
+    font-size: var(--typography-h3);
+    padding: .5rem;
+    text-decoration: none;
+  }
+
+/*══ SEARCHBOX ═══════════════════════════════════════════════════════════════*/
+  .searchBox {
+    display: none;
+    width: 169px; height: 29px;
+    border: 1px solid #3d3d3d; border-radius: 5px 5px 5px 5px;
+    background-color: white;
+  }
+
+  .search-query { border: 0px; background-color: transparent; }
+  .searchIcon { width: 12.49px; height: 12.49px; }
+
+  /*░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+   DESKTOP VERSION ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 7.0 VARIABLES ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  @media screen and (min-width: 376px) {
+
+    :root {
+
+  /*▓▓ 7.1 TYPOGRAPHY ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+  /*══ FONT SIZE ═══════════════════════════════════════════════════════════════*/
+      --typography-h1: 16px;
+      --typography-p : 13px;
+      --typography-s : 10px;
+
+  /*══ MARGIN ══════════════════════════════════════════════════════════════════*/
+      --typography-margin-body: 1.25rem;
+
+  /*▓▓ 7.2 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+  /*══ LAYOUT ══════════════════════════════════════════════════════════════════*/
+      --layout-container: 4.25rem;
+      --layout-gutter   : 1.5rem;
+
+  /*══ GAP ═════════════════════════════════════════════════════════════════════*/
+      --gap-header: 1.5rem;
+
+    } /*<End of root>*/
+
+  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 8.0 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+    .layout-container,
+    .layout-column-center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 9.0 SECTION ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+  /*▓▓ 9.1 HEADER ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+    .section-header { padding-bottom: 20px; padding-top: 2rem; }
+
+  /*══ ICON ════════════════════════════════════════════════════════════════════*/
+    .section-header--menu-icon { display: none; }
+
+  /*══ NAV ═════════════════════════════════════════════════════════════════════*/
+    .section-header--nav {
+      background-color: transparent;
+      box-shadow: none;
+      flex-direction: row;
+      opacity: 1;
+      padding: 0;
+      position: static;
+      visibility: visible;
+    }
+
+    .section-header--nav-link { font-size: var(--typography-p); padding: 0; }
+
+  /*══ SEARCHBOX ═══════════════════════════════════════════════════════════════*/
+    .searchBox {
+      display: block;
+      width: 169px; height: 29px;
+      border: 1px solid #3d3d3d; border-radius: 5px 5px 5px 5px;
+      background-color: white;
+    }
+    .search-query { border: 0px; background-color: transparent; margin-top: -20px;}
+    .searchIcon { width: 12.49px; height: 12.49px; }
+
+} /*<end of Desktop version>*/
