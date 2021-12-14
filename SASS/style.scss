@@ -20,6 +20,13 @@ MOBILE VERSION
     5.1 HEADER
     5.2 MAIN
 DESKTOP VERSION
+  6.0 VARIABLES
+    6.1 TYPOGRAPHY
+    6.2 LAYOUT
+  7.0 LAYOUT
+  8.0 SECTION
+    8.1 HEADER
+    8.2 MAIN
 */
 
 /*░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -352,12 +359,12 @@ li, {font-size: 11px; line-height: 15px;}
    DESKTOP VERSION ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 7.0 VARIABLES ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 6.0 VARIABLES ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
   @media screen and (min-width: 376px) {
 
     :root {
 
-  /*▓▓ 7.1 TYPOGRAPHY ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  /*▓▓ 6.1 TYPOGRAPHY ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
 
   /*══ FONT SIZE ═══════════════════════════════════════════════════════════════*/
       --typography-h1: 16px;
@@ -367,7 +374,7 @@ li, {font-size: 11px; line-height: 15px;}
   /*══ MARGIN ══════════════════════════════════════════════════════════════════*/
       --typography-margin-body: 1.25rem;
 
-  /*▓▓ 7.2 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  /*▓▓ 6.2 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
 
   /*══ LAYOUT ══════════════════════════════════════════════════════════════════*/
       --layout-container: 4.25rem;
@@ -378,16 +385,16 @@ li, {font-size: 11px; line-height: 15px;}
 
     } /*<End of root>*/
 
-  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 8.0 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 7.0 LAYOUT ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
     .layout-container,
     .layout-column-center {
       margin-left: auto;
       margin-right: auto;
     }
 
-  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 9.0 SECTION ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  /*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 8.0 SECTION ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
 
-  /*▓▓ 9.1 HEADER ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+  /*▓▓ 8.1 HEADER ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
 
     .section-header { padding-bottom: 20px; padding-top: 2rem; }
 
@@ -416,5 +423,106 @@ li, {font-size: 11px; line-height: 15px;}
     }
     .search-query { border: 0px; background-color: transparent; margin-top: -20px;}
     .searchIcon { width: 12.49px; height: 12.49px; }
+    /*▓▓ 8.2 MAIN ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+
+/*══ Styling flexbox ═════════════════════════════════════════════════════════*/
+  .flex-container {
+    display: flex; flex-direction: row; flex-wrap: wrap; flex: 1;
+    margin-top: 17px; margin-left: auto;
+    margin-right: auto; max-width: 1078px;
+    }
+
+  .column1 {
+    width: 61%; height: 559px;
+    margin-right: 17px; }
+
+/*══ Styling article1 1 ══════════════════════════════════════════════════════*/
+  .container {
+    position: absolute; left: 0; right: 0;
+    bottom: 4px; background: rgba(0, 0, 0, 0.7); }
+  .img1 { width: 100%; height: 100%; }
+  .text1 { margin: 20px 0px 0px 27px; width: 67%;}
+
+
+
+/*══ Styling Column 2 ════════════════════════════════════════════════════════*/
+  .column2 {
+    display: flex; flex-direction: column;
+    flex-basis: 100%; flex: 1;
+    width: 37%; height: 559px; }
+
+/*══ Styling article1 2 ══════════════════════════════════════════════════════*/
+.column2-1 { width: 100%; height: 276px; }
+  .article2 { width: 100%; height: 100%; }
+  .img2 { width: 100%; height: 100%; }
+  .container2 { position: relative;
+            left: 0; right: 0; bottom: 4px; top: -130px;
+            background: rgba(0, 0, 0, 0.7); }
+
+  .text2 { padding: 11px 10px 15px 16px; }
+  h1 { margin: 0px 0px 5px 0px;}
+  p { font-size: 12px; font-weight: 400;
+    line-height: 15px; letter-spacing: 0em;}
+
+/*Publish_note_2*/
+  .Publish_note_2 { margin-bottom: -1px; font-size: 10px; line-height: 14px; }
+
+  .column2-2 { height: 274px; margin-top: 9px; }
+
+/*══ Styling article1 3 ══════════════════════════════════════════════════════*/
+  .column2-2-1 { height: 126px; width: 100%; margin-bottom: 9px; }
+
+  .article3 { width: 100%; height: 100%; display: flex; }
+
+  .img3 { width: 44%; height: 100%; }
+
+  .section3 { margin-left: 10px; }
+            width: 100%; height: 100%;
+            line-height: 15px; display: flex;
+
+/*══ Styling article1 4 ══════════════════════════════════════════════════════*/
+
+  .column2-2-2 { height: 139px; width: 100%; }
+
+  .article4 { width: 100%; height: 100%; display: flex;}
+
+  .img4 { width: 44%; height: 100%; }
+
+  .section4 { margin-left: 10px; }
+
+/*══ Styling Read more button 1 ══════════════════════════════════════════════*/
+  .readmore { position: absolute; right: 15px; bottom: 10px; }
+  .readmore button {
+    border: none; font-size: 10px; cursor: pointer;
+    background-image: url(./img/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left; width: 78px; height: 23px;
+    background-position: 0px 12px;}
+  .readmore span { margin-left: -5px; } /*Text*/
+
+/*══ Styling Read more button 2 ══════════════════════════════════════════════*/
+  .readmore2 { position: absolute; right: 8px; bottom: 5px; }
+  .readmore2 button {
+    border: none; font-size: 10px; cursor: pointer;
+    background-image: url(./img/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left; width: 78px; height: 23px;
+    background-position: 0px 12px; }
+  .readmore2 span { margin-left: -5px;}
+
+/*══ Styling FOOTER ══════════════════════════════════════════════*/
+  footer { width: 100%; }
+  hr {
+    position: relative;
+    width: 100%; height: 1px;
+    background-color: #1E2D37;
+  }
+
+  .img5 { width: 100%; height: auto; }
 
 } /*<end of Desktop version>*/
